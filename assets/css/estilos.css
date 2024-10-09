@@ -1,0 +1,64 @@
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+
+.card {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    size-adjust: auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+
+
+.container {
+    background-color: lightblue;
+    padding: 20px;
+
+}
+
+
+.carrito {
+    background-color: lightgray; 
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
+#detalles {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+/*total a pagar y nombre de profuctos*/
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkred;
+}
+
+#detallesCarrito {
+    color: darkslategray;
+    font-style: italic;
+}

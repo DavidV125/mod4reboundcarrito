@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebound Módulo 4 - Carrito de Compras</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+
+
+<body onload="asignarEventos()">
+
+  <div id="titulo"></div>
+<h1>Supermercado - Carrito de Compras</h1>
+</div>
+
+  <div class="productos-contenedor">
+      <div class="card">
+          <img src="./assets/img/azucar.jpg" class="card-img-top" alt="azucar">
+          <div class="card-body">
+            <h5 class="card-title" id="precioAzucar">$1.390</h5>
+            <p class="card-text">Azúcar Iansa 1kg.</p>
+            <input type="number" id="txtAzucar"><br>
+            <hr>
+            <button id="btn-calcular" class="btn btn-success agregar-carrito">Agregar</button>
+          </div>
+      </div>
+  
+      <div class="card">
+          <img src="./assets/img/leche.jpg" class="card-img-top" alt="leche">
+          <div class="card-body">
+            <h5 class="card-title" id="precioLeche">$1.189</h5>
+            <p class="card-text">Leche Colun Entera 1 L.</p>
+            <input type="number" id="txtLeche"><br>
+            <hr>
+            <button id="btn-calcular2" class="btn btn-success agregar-carrito">Agregar</button>
+          </div>
+      </div>
+
+      <div class="card">
+          <img src="./assets/img/mermelada.jpg" class="card-img-top" alt="mermelada">
+          <div class="card-body">
+            <h5 class="card-title" id="precioMermelada">$4.190</h5>
+            <p class="card-text">Mermelada St. Dalfour Frutilla 284 g.</p>
+            <input type="number" id="txtMermelada"><br>
+            <hr>
+            <button id="btn-calcularMermelada" class="btn btn-success agregar-carrito">Agregar</button>
+          </div>
+      </div>
+  
+      <div class="card">
+          <img src="./assets/img/molde.jpg" class="card-img-top" alt="molde">
+          <div class="card-body">
+            <h5 class="card-title" id="precioPan">$2.949</h5>
+            <p class="card-text">Pan Molde Ideal Blanco XL 750 g.</p>
+            <input type="number" id="txtPan"><br>
+            <hr>
+            <button id="btn-calcularPan" class="btn btn-success agregar-carrito">Agregar</button>
+          </div>
+      </div>
+  
+      <div class="card">
+          <img src="./assets/img/queso.jpg" class="card-img-top" alt="queso">
+          <div class="card-body">
+            <h5 class="card-title" id="precioQueso">$4.499</h5>
+            <p class="card-text">Queso Mantecoso Río Bueno Trozo 250 g.</p>
+            <input type="number" id="txtQueso"><br>
+            <hr>
+            <button id="btn-calcularQueso" class="btn btn-success agregar-carrito">Agregar</button>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <h1>Carrito de Compras</h1>
+      <div class="carrito">
+
+          <button class="btn btn-danger" id="btn-finalizar">Aplicar Descuento</button>
+          <div id="detalles"></div>
+          <p2 id="detallesCarrito"></p2>
+          <p>Total a Pagar: $<span id="txtValorFinalAPagar">0</span></p>
+      </div>
+  </div>
+
+  <script src="./assets/js/logica.js"></script>
+</body>
+</html>
